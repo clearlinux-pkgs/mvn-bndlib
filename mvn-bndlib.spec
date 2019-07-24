@@ -4,12 +4,16 @@
 #
 Name     : mvn-bndlib
 Version  : 2.1.0
-Release  : 4
+Release  : 5
 URL      : https://repo1.maven.org/maven2/biz/aQute/bnd/bndlib/2.1.0/bndlib-2.1.0.jar
 Source0  : https://repo1.maven.org/maven2/biz/aQute/bnd/bndlib/2.1.0/bndlib-2.1.0.jar
 Source1  : https://repo1.maven.org/maven2/biz/aQute/bnd/bndlib/2.1.0/bndlib-2.1.0.pom
 Source2  : https://repo1.maven.org/maven2/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.jar
 Source3  : https://repo1.maven.org/maven2/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.pom
+Source4  : https://repo1.maven.org/maven2/biz/aQute/bnd/parent/2.1.0/parent-2.1.0.pom
+Source5  : https://repo1.maven.org/maven2/biz/aQute/bnd/parent/2.3.0/parent-2.3.0.pom
+Source6  : https://repo1.maven.org/maven2/biz/aQute/bndlib/1.15.0/bndlib-1.15.0.jar
+Source7  : https://repo1.maven.org/maven2/biz/aQute/bndlib/1.15.0/bndlib-1.15.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -32,16 +36,28 @@ data components for the mvn-bndlib package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0
-cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0/bndlib-2.1.0.jar
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0/bndlib-2.1.0.pom
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.jar
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.pom
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.1.0
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.1.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.3.0
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.3.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bndlib/1.15.0
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bndlib/1.15.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bndlib/1.15.0
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bndlib/1.15.0
 
 
 %files
@@ -53,3 +69,7 @@ cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.
 /usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.1.0/bndlib-2.1.0.pom
 /usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.jar
 /usr/share/java/.m2/repository/biz/aQute/bnd/bndlib/2.3.0/bndlib-2.3.0.pom
+/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.1.0/parent-2.1.0.pom
+/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.3.0/parent-2.3.0.pom
+/usr/share/java/.m2/repository/biz/aQute/bndlib/1.15.0/bndlib-1.15.0.jar
+/usr/share/java/.m2/repository/biz/aQute/bndlib/1.15.0/bndlib-1.15.0.pom
